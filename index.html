@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhavya's Portfolio</title>
+
     <style>
+        /* Prevent flash of unstyled content */
+        body {
+            visibility: hidden;
+        }
+
+        body.loaded {
+            visibility: visible;
+        }
         /* Reset and Base Styles */
         * {
             margin: 0;
